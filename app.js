@@ -3,9 +3,8 @@ let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
-
-let admin_routes = require('./controller/admin_routes');
-let user_routes = require('./controller/user_routes');
+let db = require('./model/db.js');
+let routes = require('./controller/route.js');
 
 let app = express();
 
@@ -17,10 +16,9 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/assets', express.static(__dirname + '/public'));
 
-app.use('/', user_routes);
-app.use('/admin', admin_routes); 
+app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -35,9 +33,22 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
 });
 
-module.exports = app;
+db.connect(db.basilio_mode,(err)=>{
+  if(err) {
+    console.error('Unable to Connect MYSQL' + err);
+    process.exit(1);
+  }
 
-app.listen(3000,'localhost');
+  else {
+    let server = app.listen(3000, ()=>{
+      console.log('[SERVER] Listening in port:' +server.address().port);
+      
+    }).on('error', (err)=>{
+      console.log('[SERVER] Network related error: Port must be in use'+ err);
+      process.exit(1);
+    });
+  }
+});
+module.exports = app;
