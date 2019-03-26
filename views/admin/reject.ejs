@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Admin, Dashboard, Bootstrap" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BASILIO</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/img/favicon/manifest.json">
+    <link rel="mask-icon" href="../../assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="../../assets/fonts/md-fonts/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/libs/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../../assets/libs/jquery-loading/dist/jquery.loading.min.css">
+    <link id="pageStyle" rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body class="app sidebar-fixed aside-menu-off-canvas aside-menu-hidden header-fixed">
+    <header class="app-header navbar">
+        <div class="hamburger hamburger--arrowalt-r navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+        <!-- end hamburger -->
+        <a class="navbar-brand" href="../../contents/dashboards/dashboard-sales.html">
+            <strong>octAdmin</strong>
+        </a>
+
+        <div class="hamburger hamburger--arrowalt-r navbar-toggler sidebar-toggler d-md-down-none mr-auto">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+        <!-- end hamburger -->
+
+        <ul class="nav navbar-nav ">
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="mdi mdi-bell-ring"></i>
+                    <span class="notification hertbit"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right notification-list animated flipInY nicescroll-box">
+
+                    <div class="dropdown-header">
+                        <strong>Notification</strong>
+                        <span class="badge badge-pill badge-theme pull-right"> new 5</span>
+                    </div>
+                    <!--end dropdown-header -->
+
+                    <div class="wrap">
+
+                        <a href="#" class="dropdown-item">
+                            <div class="message-box">
+                                <div class="u-img">
+                                    <img src="http://via.placeholder.com/100x100" alt="user" />
+                                </div>
+                                <!-- end u-img -->
+                                <div class="u-text">
+                                    <div class="u-name">
+                                        <strong>A New Order has Been Placed </strong>
+                                    </div>
+                                    <small>2 minuts ago</small>
+                                </div>
+                                <!-- end u-text -->
+                            </div>
+                            <!-- end message-box -->
+                        </a>
+                        <!-- end dropdown-item -->
+
+                        <a href="#" class="dropdown-item">
+                            <div class="message-box">
+                                <div class="u-img">
+                                    <img src="http://via.placeholder.com/100x100" alt="user" />
+                                </div>
+                                <div class="u-text">
+                                    <div class="u-name">
+                                        <strong>Order Updated</strong>
+                                    </div>
+                                    <small>10 minuts ago</small>
+                                </div>
+                                <!-- end u-text -->
+                            </div>
+                            <!-- end message-box -->
+                        </a>
+                        <!-- end dropdown-item -->
+
+                        <a href="#" class="dropdown-item">
+                            <div class="message-box">
+                                <div class="u-img">
+                                    <img src="http://via.placeholder.com/100x100" alt="user" />
+                                </div>
+                                <!-- end u-img -->
+                                <div class="u-text">
+                                    <div class="u-name">
+                                        <strong>A New Order has Been Placed </strong>
+                                    </div>
+                                    <small>30 minuts ago</small>
+                                </div>
+                                <!-- end u-text -->
+                            </div>
+                            <!-- end message-box -->
+                        </a>
+                        <!-- end dropdown -->
+
+                        <a href="#" class="dropdown-item">
+                            <div class="message-box">
+                                <div class="u-img">
+                                    <img src="http://via.placeholder.com/100x100" alt="user" />
+                                </div>
+                                <!-- end u-img -->
+                                <div class="u-text">
+                                    <div class="u-name">
+                                        <strong> Order has Been Rated </strong>
+                                    </div>
+                                    <small>32 minuts ago</small>
+                                </div>
+                                <!-- end u-text -->
+                            </div>
+                            <!-- end message-box -->
+                        </a>
+                        <!-- end dropdown -->
+                    </div>
+                    <!-- end wrap -->
+
+                    <div class="dropdown-footer ">
+                        <a href="">
+                            <strong>See all messages (150) </strong>
+                        </a>
+                    </div>
+                    <!-- end dropdown-footer -->
+                </div>
+                <!-- end notification-list -->
+
+            </li>
+            <!-- end nav-item -->
+
+            <li class="nav-item ">
+                <a class="nav-link" href="#" data-toggle="dropdown">
+                    <i class="mdi mdi-forum"></i>
+                    <span class="notification hertbit"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right message-list animated flipInY nicescroll-box">
+
+                    <div class="dropdown-header">
+                        <strong>Messages</strong>
+                        <span class="badge badge-pill badge-theme pull-right"> new 15</span>
+                    </div>
+                    <!-- end dropdown-header -->
+                    <div class="wrap">
+
+                        <a href="#" class="dropdown-item">
+                            <div class="message-box">
+                                <div class="u-img">
+                                    <img src="http://via.placeholder.com/100x100" alt="user" />
+                                    <span class="notification online"></span>
+                                </div>
+                                <!-- end u-img -->
+                                <div class="u-text">
+                                    <div class="u-name">
+                                        <strong>Natalie Wall</strong>
+                                    </div>
+                                    <p class="text-muted">Anyways i would like just do it</p>
+                                    <small>2 minuts ago</small>
+                                </div>
+                                <!-- end u-text -->
+                            </div>
+                            <!-- end message-box -->
+                        </a>
+                        <!-- end dropdown-item -->
+
+                        <a href="#" class="dropdown-item">
+                            <div class="message-box">
+                                <div class="u-img">
+                                    <img src="http://via.placeholder.com/100x100" alt="user" />
+                                    <span class="notification offline"></span>
+                                </div>
+                                <!-- end u-img -->
+                                <div class="u-text">
+                                    <div class="u-name">
+                                        <strong>Steve johns</strong>
+                                    </div>
+                                    <p class="text-muted">There is Problem inside the Application</p>
+                                    <small>10 minuts ago</small>
+                                </div>
+                                <!-- end u-text -->
+                            </div>
+                            <!-- end message-box -->
+                        </a>
+                        <!-- end dropdown-item -->
+
+                        <a href="#" class="dropdown-item">
+                            <div class="message-box">
+                                <div class="u-img">
+                                    <img src="http://via.placeholder.com/100x100" alt="user" />
+                                    <span class="notification buzy"></span>
+                                </div>
+                                <!-- end u-img -->
+                                <div class="u-text">
+                                    <div class="u-name">
+                                        <strong>Taniya Jan</strong>
+                                    </div>
+                                    <p class="text-muted">Please Checkout The Attachment</p>
+                                    <small>30 minuts ago</small>
+                                </div>
+                                <!-- end u-text -->
+                            </div>
+                            <!-- end message-box -->
+                        </a>
+                        <!-- end dropdown-item -->
+
+                        <a href="#" class="dropdown-item">
+                            <div class="message-box">
+                                <div class="u-img">
+                                    <img src="http://via.placeholder.com/100x100" alt="user" />
+                                    <span class="notification away"></span>
+                                </div>
+                                <!-- end u-img -->
+                                <div class="u-text">
+                                    <div class="u-name">
+                                        <strong>Tim Johns</strong>
+                                    </div>
+                                    <!-- end u-name -->
+                                    <p class="text-muted">Anyways i would like just do it</p>
+                                    <small>32 minuts ago</small>
+                                </div>
+                                <!-- end u-text -->
+                            </div>
+                            <!-- end message-box -->
+                        </a>
+                        <!-- end dropdown-item -->
+                    </div>
+                    <!-- end wrap -->
+                    <div class="dropdown-footer ">
+                        <a href="">
+                            <strong>See all messages (150) </strong>
+                        </a>
+                    </div>
+                    <!-- end dropdown-footer -->
+                </div>
+                <!-- end message-list -->
+            </li>
+            <!-- end nav-item -->
+
+
+            <li class="nav-item ">
+                <a class="nav-link" href="#" data-toggle="dropdown">
+                    <i class="mdi mdi-cards"></i>
+                    <span class="notification hertbit"></span>
+                </a>
+                <!-- end navlink -->
+                <div class="dropdown-menu dropdown-menu-right task-list animated flipInY nicescroll-box">
+
+                    <div class="dropdown-header">
+                        <strong>Task List</strong>
+                        <span class="badge badge-pill badge-theme pull-right"> new 3</span>
+                    </div>
+                    <!-- end dropdown-header -->
+                    <div class="wrap">
+                        <a href="#" class="dropdown-item">
+                            <strong>Task 1</strong>
+                            <small class="pull-right">50% Complete</small>
+                            <div class="progress xs">
+                                <div class="progress-bar bg-danger" style="width: 50%" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+
+                                </div>
+                            </div>
+                        </a>
+                        <!-- end dropdown-item -->
+
+                        <a href="#" class="dropdown-item">
+                            <strong>Task 2</strong>
+                            <small class="pull-right">20% Complete</small>
+
+                            <div class="progress xs">
+                                <div class="progress-bar bg-success" style="width: 20%" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- end dropdown-item -->
+                        <a href="#" class="dropdown-item">
+                            <strong>Task 3</strong>
+                            <small class="pull-right">80% Complete</small>
+
+                            <div class="progress xs ">
+                                <div class="progress-bar bg-warning" style="width: 80%" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+
+                                </div>
+                            </div>
+                        </a>
+                        <!-- end dropdown-item -->
+
+                        <a href="#" class="dropdown-item">
+                            <strong>Task 4</strong>
+                            <small class="pull-right">60% Complete</small>
+
+                            <div class="progress xs ">
+                                <div class="progress-bar bg-info" style="width: 60%" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+
+                                </div>
+                            </div>
+                        </a>
+                        <!-- end dropdown-item -->
+                    </div>
+                    <!-- end wrap -->
+                    <div class="dropdown-footer ">
+                        <a href="">
+                            <strong>view all task (20) </strong>
+                        </a>
+                    </div>
+                    <!-- end dropdown-footer -->
+
+                </div>
+                <!-- dropdown-menu -->
+            </li>
+            <!-- end navitem -->
+
+            <li class="nav-item dropdown">
+                <a class="btn btn-round btn-theme btn-sm" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+
+                    <span class="">admin
+                        <i class="fa fa-arrow-down"></i>
+                    </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right user-menu animated flipInY ">
+                    <div class="wrap">
+                        <div class="dw-user-box">
+                            <div class="u-img">
+                                <img src="http://via.placeholder.com/100x100" alt="user" />
+                            </div>
+                            <div class="u-text">
+                                <h5>Natalie Wall</h5>
+                                <p class="text-muted">wall@gmail.com</p>
+                                <a href="#" class="btn btn-round btn-theme btn-sm">View Profile</a>
+                            </div>
+                        </div>
+                        <!-- end dw-user-box -->
+
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-user"></i> Profile</a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-wrench"></i> Settings</a>
+
+                        <div class="divider"></div>
+
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-lock"></i> Logout</a>
+                    </div>
+                    <!-- end wrap -->
+                </div>
+                <!-- end dropdown-menu -->
+            </li>
+            <!-- end nav-item -->
+
+
+        </ul>
+
+        <div class="hamburger hamburger--arrowalt-r navbar-toggler aside-menu-toggler ">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <div class="app-body">
+        <div class="sidebar" id="sidebar">
+            <nav class="sidebar-nav" id="sidebar-nav-scroller">
+                <ul class="nav">
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link" href="../../views/admin/request.html">
+                            <i class="mdi mdi-developer-board"></i> Approval Requests
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link" href="../../views/admin/dashboard.html">
+                            <i class="mdi mdi-gauge"></i> Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link" href="../../contents/dashboards/dashboard-project-management.html">
+                            <i class="mdi mdi-book-open-page-variant"></i> Journal
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link" href="../../contents/dashboards/dashboard-project-management.html">
+                            <i class="mdi mdi-file"></i> Upload File
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="mdi mdi-table-large"></i> Table List
+                        </a>
+
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../contents/apps/apps-calendar.html">Host List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../contents/apps/apps-mail.html"> Reject List</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="mdi mdi-settings"></i> Maintenance</a>
+
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../contents/layouts/sidebar-compact.html"> Animal Taxonomy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../contents/layouts/sidebar-compact-colored.html"> Bacteria Taxonomy</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link" href="#">
+                            <i class="mdi mdi-developer-board"></i> Animal
+                        </a>
+                    </li>
+
+                    
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link" href="#">
+                            <i class="mdi mdi-developer-board"></i> Bacteria
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+        <!-- end sidebar -->
+
+        <main class="main">
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb bc-colored bg-theme" id="breadcrumb">
+                <li class="breadcrumb-item ">
+                    <a href="">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Dashboards</a>
+                </li>
+                <li class="breadcrumb-item active">Dashboard PM</li>
+            </ol>
+
+            <div class="container-fluid">
+
+                <div class="animated fadeIn">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-pm-summary bg-theme">
+                                <div class="card-body">
+
+                                    <div class="clearfix">
+                                        <div class="float-left">
+                                            <div class="h3 text-white">
+                                                <strong>Projects</strong>
+                                            </div>
+                                            <small class="text-white">4031 TOTAL</small>
+                                        </div>
+
+                                        <div class="float-right">
+                                            <button class="btn btn-dark">New Project</button>
+                                        </div>
+                                    </div>
+                                    <!-- end clearfix -->
+
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="card-body">
+                                                <div class="widget-pm-summary">
+                                                    <i class="mdi mdi-checkbox-multiple-marked-outline"></i>
+                                                    <div class="widget-text">
+                                                        <div class="h2 text-white">241</div>
+                                                        <small class="text-white">Published Project</small>
+                                                    </div>
+                                                    <!-- end widget-text -->
+                                                </div>
+                                                <!-- end widget-pm-simmary -->
+                                            </div>
+                                            <!-- end card-body -->
+                                        </div>
+                                        <!-- end inside-col -->
+
+                                        <div class="col-md-3">
+                                            <div class="card-body">
+                                                <div class="widget-pm-summary">
+                                                    <i class="mdi mdi-google-circles"></i>
+                                                    <div class="widget-text">
+                                                        <div class="h2 text-white">3790</div>
+                                                        <small class="text-white">Completed Tasks</small>
+                                                    </div>
+                                                    <!-- end widget-text -->
+                                                </div>
+                                                <!-- end widget-pm-simmary -->
+                                            </div>
+                                            <!-- end card-body -->
+                                        </div>
+                                        <!-- end inside-col -->
+
+                                        <div class="col-md-3">
+                                            <div class="card-body">
+                                                <div class="widget-pm-summary">
+                                                    <i class="mdi mdi-chart-pie"></i>
+                                                    <div class="widget-text">
+                                                        <div class="h2 text-white">98%</div>
+                                                        <small class="text-white">Successfull Tasks</small>
+                                                    </div>
+                                                    <!-- end widget-text -->
+                                                </div>
+                                                <!-- end widget-pm-simmary -->
+                                            </div>
+                                            <!-- end card-body -->
+                                        </div>
+                                        <!-- end inside-col -->
+
+                                        <div class="col-md-3">
+                                            <div class="card-body">
+                                                <div class="widget-pm-summary">
+                                                    <i class="mdi mdi-file-tree"></i>
+                                                    <div class="widget-text">
+                                                        <div class="h2 text-white">158</div>
+                                                        <small class="text-white">Ongoing Projects</small>
+                                                    </div>
+                                                    <!-- end widget-text -->
+                                                </div>
+                                                <!-- end widget-pm-simmary -->
+                                            </div>
+                                            <!-- end card-body -->
+                                        </div>
+                                        <!-- end inside-col -->
+                                    </div>
+                                    <!-- end inside row -->
+
+                                </div>
+                                <!-- end card-body -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card card-accent-danger">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <div class="float-right">
+                                                    <div class="h2 text-danger">50</div>
+                                                </div>
+                                            </div>
+                                            <div class="float-left">
+                                                <div class="h3 ">
+                                                    <strong>Completed</strong>
+                                                </div>
+                                                <div class="h6 text-danger"> Project </div>
+                                            </div>
+                                        </div>
+                                        <!-- end card-body -->
+                                    </div>
+                                    <!-- end card -->
+                                </div>
+                                <!-- end inside col -->
+                                <div class="col-md-6">
+                                    <div class="card card-accent-success">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <div class="float-right">
+                                                    <div class="h2 text-success">10</div>
+                                                </div>
+                                            </div>
+                                            <div class="float-left">
+                                                <div class="h3 ">
+                                                    <strong>Running</strong>
+                                                </div>
+                                                <div class="h6 text-success"> Client </div>
+                                            </div>
+                                        </div>
+                                        <!-- end card-body -->
+                                    </div>
+                                    <!-- end card -->
+                                </div>
+                                <!-- end inside col -->
+                            </div>
+                            <!-- end inside row -->
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card card-accent-primary">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <div class="float-right">
+                                                    <div class="h2 text-primary">700</div>
+                                                </div>
+                                            </div>
+                                            <div class="float-left">
+                                                <div class="h3 ">
+                                                    <strong>Hours</strong>
+                                                </div>
+                                                <div class="h6 text-primary"> Work </div>
+                                            </div>
+                                        </div>
+                                        <!-- end card-body -->
+                                    </div>
+                                    <!-- end card -->
+                                </div>
+                                <!-- end inside col -->
+                                <div class="col-md-6">
+                                    <div class="card card-accent-warning">
+                                        <div class="card-body ">
+                                            <div class="clearfix">
+                                                <div class="float-right">
+                                                    <div class="h2 text-warning">160</div>
+                                                </div>
+                                            </div>
+                                            <div class="float-left">
+                                                <div class="h3 ">
+                                                    <strong>Hours</strong>
+                                                </div>
+                                                <div class="h6 text-warning"> Coffe </div>
+                                            </div>
+                                        </div>
+                                        <!-- end card-body -->
+                                    </div>
+                                    <!-- end card -->
+                                </div>
+                                <!-- end inside col -->
+
+                            </div>
+                            <!-- end inside row -->
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-md-6">
+                            <div class="card card-accent-theme">
+                                <div class="card-body">
+                                    <div class="h5 ">
+                                        <strong>Earning Statmant</strong>
+                                    </div>
+                                    <small class="text-theme">BASED ON LAST 30 DAYS</small>
+                                    <canvas class="chart-canvas" id="earning-chart-success"></canvas>
+                                </div>
+                                <!-- end card-body -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card card-accent-info projects-charts-widget">
+                                <div class="card-body">
+                                    <div class="text-info h3">ILOSC
+                                        <br/>Project</div>
+                                    <div class="text-dark h2">
+                                        <span class="text-secondary">$</span> 180,150</div>
+                                    <div class="text-info ">
+                                        <i class="fa fa-arrow-right"></i> 0%</div>
+                                    <canvas class="chart-canvas" id="project-chart-info"></canvas>
+                                </div>
+                                <!-- end card-body -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="card card-accent-danger projects-charts-widget">
+                                <div class="card-body">
+                                    <div class="text-danger h3">SOMS
+                                        <br/>Project</div>
+                                    <div class="text-dark h2">
+                                        <span class="text-secondary">$</span> 10,000</div>
+                                    <div class="text-danger ">
+                                        <i class="fa fa-arrow-down"></i> 25.5%</div>
+                                    <canvas class="chart-canvas" id="project-chart-danger"></canvas>
+                                </div>
+                                <!-- end card-body -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="card card-accent-success projects-charts-widget">
+                                <div class="card-body">
+                                    <div class="text-success h3">STDM
+                                        <br/>Project</div>
+                                    <div class="text-dark h2">
+                                        <span class="text-secondary">$</span> 523,658</div>
+                                    <div class="text-success ">
+                                        <i class="fa fa-arrow-up"></i> 80%</div>
+                                    <canvas class="chart-canvas" id="project-chart-success"></canvas>
+                                </div>
+                                <!-- end card-body -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="card card-accent-primary projects-charts-widget">
+                                <div class="card-body">
+                                    <div class="text-primary h3">ASLP
+                                        <br/>Project</div>
+                                    <div class="text-dark h2">
+                                        <span class="text-secondary">$</span> 523,658</div>
+                                    <div class="text-primary ">
+                                        <i class="fa fa-arrow-left"></i> 0.8%</div>
+                                    <canvas class="chart-canvas" id="project-chart-primary"></canvas>
+                                </div>
+                                <!-- end card-body -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="card  card-accent-theme">
+                                <div class="message-widget">
+                                    <h1> Messages
+                                        <i class="fa fa-comments-o float-right"></i>
+                                    </h1>
+
+                                    <ul id="messageList">
+                                        <li class="clearfix">
+                                            <a href="#" class="dropdown-item">
+                                                <div class="message-box ">
+                                                    <div class="u-img float-left">
+                                                        <img src="http://via.placeholder.com/100x100" alt="user" />
+                                                        <span class="notification online"></span>
+                                                    </div>
+                                                    <div class="u-text float-left">
+                                                        <div class="u-name">
+                                                            <strong>Natalie Wall</strong>
+                                                        </div>
+                                                        <p class="text-muted">Anyways i would like just do it</p>
+
+                                                    </div>
+                                                </div>
+                                                <small class="float-right">2 minuts ago</small>
+                                            </a>
+                                        </li>
+
+
+
+                                        <li class="clearfix">
+                                            <a href="#" class="dropdown-item">
+                                                <div class="message-box ">
+                                                    <div class="u-img float-left">
+                                                        <img src="http://via.placeholder.com/100x100" alt="user" />
+                                                        <span class="notification offline"></span>
+                                                    </div>
+                                                    <div class="u-text float-left">
+                                                        <div class="u-name">
+                                                            <strong>Steve johns</strong>
+                                                        </div>
+                                                        <p class="text-muted">There is Problem inside the Application</p>
+
+                                                    </div>
+                                                </div>
+                                                <small class="float-right">10 minuts ago</small>
+                                            </a>
+                                        </li>
+
+                                        <li class="clearfix">
+                                            <a href="#" class="dropdown-item">
+                                                <div class="message-box ">
+                                                    <div class="u-img float-left">
+                                                        <img src="http://via.placeholder.com/100x100" alt="user" />
+                                                        <span class="notification away"></span>
+                                                    </div>
+                                                    <div class="u-text float-left">
+                                                        <div class="u-name">
+                                                            <strong>Tim Johns</strong>
+                                                        </div>
+                                                        <p class="text-muted">Anyways i would like just do it</p>
+
+                                                    </div>
+                                                </div>
+                                                <small class="float-right">10 minuts ago</small>
+                                            </a>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#" class="dropdown-item">
+                                                <div class="message-box ">
+                                                    <div class="u-img float-left">
+                                                        <img src="http://via.placeholder.com/100x100" alt="user" />
+                                                        <span class="notification offline"></span>
+                                                    </div>
+                                                    <div class="u-text float-left">
+                                                        <div class="u-name">
+                                                            <strong>Steve johns</strong>
+                                                        </div>
+                                                        <p class="text-muted">There is Problem inside the Application</p>
+
+                                                    </div>
+                                                </div>
+                                                <small class="float-right">10 minuts ago</small>
+                                            </a>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#" class="dropdown-item">
+                                                <div class="message-box ">
+                                                    <div class="u-img float-left">
+                                                        <img src="http://via.placeholder.com/100x100" alt="user" />
+                                                        <span class="notification buzy"></span>
+                                                    </div>
+                                                    <div class="u-text float-left">
+                                                        <div class="u-name">
+                                                            <strong>Taniya Jan</strong>
+                                                        </div>
+                                                        <p class="text-muted">Please Checkout The Attachment</p>
+
+                                                    </div>
+                                                </div>
+                                                <small class="float-right">2 Days ago</small>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <!-- end card-body -->
+                                <div class="card-footer text-center">
+                                    <a href="" class="text-theme">
+                                        <strong>See all messages (150) </strong>
+                                    </a>
+
+                                </div>
+                                <!-- end card-footer -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card card-accent-left-danger widget-reminder">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                            </ul>
+
+                                            <div class="reminder-text">
+                                                <div class="time h3 text-danger">08:50</div>
+                                                <div class="time h5 text-dark"><strong>MEETING</strong></div>
+                                                <small>Discussion about PSML Project</small>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- div.card -->
+                                </div>
+                                <!-- end inside col -->
+
+                                <div class="col-md-6">
+                                    <div class="card card-accent-left-success widget-reminder">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                            </ul>
+
+                                            <div class="reminder-text">
+                                                <div class="time h3 text-success">08:50</div>
+                                                <div class="time h5 text-dark"><strong>MEETING</strong></div>
+                                                <small>Discussion about PSML Project</small>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- div.card -->
+                                </div>
+                                <!-- end inside col -->
+
+                            </div>
+                            <!-- end inside row -->
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card card-accent-left-info widget-reminder">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                            </ul>
+
+                                            <div class="reminder-text">
+                                                <div class="time h3 text-info">08:50</div>
+                                                <div class="time h5 text-dark"><strong>MEETING</strong></div>
+                                                <small>Discussion about PSML Project</small>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- div.card -->
+                                </div>
+                                <!-- end inside col -->
+
+                                <div class="col-md-6">
+                                    <div class="card card-accent-left-warning widget-reminder">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                                <li><img src="http://via.placeholder.com/100x100" alt=""></li>
+                                            </ul>
+
+                                            <div class="reminder-text">
+                                                <div class="time h3 text-warning">08:50</div>
+                                                <div class="time h5 text-dark"><strong>MEETING</strong></div>
+                                                <small>Discussion about PSML Project</small>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- div.card -->
+                                </div>
+                                <!-- end inside col -->
+
+                            </div>
+                            <!-- end inside row -->
+
+                        </div>
+                        <!-- end col -->
+
+                    </div>
+                    <!-- end row -->
+
+                </div>
+                <!-- end animated fadeIn -->
+            </div>
+            <!-- end container-fluid -->
+
+        </main>
+        <!-- end main -->
+
+
+        <aside class="aside-menu">
+            <div class="aside-header bg-theme text-uppercase">Service Panel</div>
+            <div class="aside-body">
+                <h6 class="text-theme">Light Sidebar</h6>
+                <ul class="theme-colors">
+                    <li class="theme-blue" onclick="swapStyleSheet('../../css/style-blue.css')"></li>
+                    <li class="theme-green" onclick="swapStyleSheet('../../css/style-green.css')"></li>
+                    <li class="theme-red" onclick="swapStyleSheet('../../css/style-red.css')"></li>
+                    <li class="theme-yellow" onclick="swapStyleSheet('../../css/style-yellow.css')"></li>
+                    <li class="theme-orange" onclick="swapStyleSheet('../../css/style-orange.css')"></li>
+                    <li class="theme-teal" onclick="swapStyleSheet('../../css/style-teal.css')"></li>
+                    <li class="theme-cyan" onclick="swapStyleSheet('../../css/style-cyan.css')"></li>
+                    <li class="theme-purple" onclick="swapStyleSheet('../../css/style-purple.css')"></li>
+                    <li class="theme-indigo" onclick="swapStyleSheet('../../css/style-indigo.css')"></li>
+                    <li class="theme-pink" onclick="swapStyleSheet('../../css/style-pink.css')"></li>
+                </ul>
+
+                <!-- <h6 class="text-theme">Social Colors</h6> -->
+                <ul class="theme-colors">
+                    <li class="theme-facebook" onclick="swapStyleSheet('../../css/style-facebook.css')"></li>
+                    <li class="theme-twitter" onclick="swapStyleSheet('../../css/style-twitter.css')"></li>
+                    <li class="theme-linkedin" onclick="swapStyleSheet('../../css/style-linkedin.css')"></li>
+                    <li class="theme-google-plus" onclick="swapStyleSheet('../../css/style-google-plus.css')"></li>
+                    <li class="theme-flickr" onclick="swapStyleSheet('../../css/style-flickr.css')"></li>
+                    <li class="theme-tumblr" onclick="swapStyleSheet('../../css/style-tumblr.css')"></li>
+                    <li class="theme-xing" onclick="swapStyleSheet('../../css/style-xing.css')"></li>
+                    <li class="theme-github" onclick="swapStyleSheet('../../css/style-github.css')"></li>
+                    <li class="theme-html5" onclick="swapStyleSheet('../../css/style-html5.css')"></li>
+                    <li class="theme-openid" onclick="swapStyleSheet('../../css/style-openid.css')"></li>
+                    <li class="theme-stack-overflow" onclick="swapStyleSheet('../../css/style-stack-overflow.css')"></li>
+                    <li class="theme-css3" onclick="swapStyleSheet('../../css/style-css3.css')"></li>
+                    <li class="theme-dribbble" onclick="swapStyleSheet('../../css/style-dribbble.css')"></li>
+                    <li class="theme-instagram" onclick="swapStyleSheet('../../css/style-instagram.css')"></li>
+                    <li class="theme-pinterest" onclick="swapStyleSheet('../../css/style-pinterest.css')"></li>
+                    <li class="theme-vk" onclick="swapStyleSheet('../../css/style-vk.css')"></li>
+                    <li class="theme-yahoo" onclick="swapStyleSheet('../../css/style-yahoo.css')"></li>
+                    <li class="theme-behance" onclick="swapStyleSheet('../../css/style-behance.css')"></li>
+                    <li class="theme-dropbox" onclick="swapStyleSheet('../../css/style-dropbox.css')"></li>
+                    <li class="theme-reddit" onclick="swapStyleSheet('../../css/style-reddit.css')"></li>
+                    <li class="theme-spotify" onclick="swapStyleSheet('../../css/style-spotify.css')"></li>
+                    <li class="theme-vine" onclick="swapStyleSheet('../../css/style-vine.css')"></li>
+                    <li class="theme-foursquare" onclick="swapStyleSheet('../../css/style-foursquare.css')"></li>
+                    <li class="theme-vimeo" onclick="swapStyleSheet('../../css/style-vimeo.css')"></li>
+
+                </ul>
+
+                <h6 class="text-theme">Dark Sidebar</h6>
+                <ul class="theme-colors">
+                    <li class="theme-blue" onclick="swapStyleSheetDark('../../css/style-blue.css')"></li>
+                    <li class="theme-green" onclick="swapStyleSheetDark('../../css/style-green.css')"></li>
+                    <li class="theme-red" onclick="swapStyleSheetDark('../../css/style-red.css')"></li>
+                    <li class="theme-yellow" onclick="swapStyleSheetDark('../../css/style-yellow.css')"></li>
+                    <li class="theme-orange" onclick="swapStyleSheetDark('../../css/style-orange.css')"></li>
+                    <li class="theme-teal" onclick="swapStyleSheetDark('../../css/style-teal.css')"></li>
+                    <li class="theme-cyan" onclick="swapStyleSheetDark('../../css/style-cyan.css')"></li>
+                    <li class="theme-purple" onclick="swapStyleSheetDark('../../css/style-purple.css')"></li>
+                    <li class="theme-indigo" onclick="swapStyleSheetDark('../../css/style-indigo.css')"></li>
+                    <li class="theme-pink" onclick="swapStyleSheetDark('../../css/style-pink.css')"></li>
+                </ul>
+
+                <!-- <h6 class="text-theme">Social Colors</h6> -->
+                <ul class="theme-colors">
+                    <li class="theme-facebook" onclick="swapStyleSheetDark('../../css/style-facebook.css')"></li>
+                    <li class="theme-twitter" onclick="swapStyleSheetDark('../../css/style-twitter.css')"></li>
+                    <li class="theme-linkedin" onclick="swapStyleSheetDark('../../css/style-linkedin.css')"></li>
+                    <li class="theme-google-plus" onclick="swapStyleSheetDark('../../css/style-google-plus.css')"></li>
+                    <li class="theme-flickr" onclick="swapStyleSheetDark('../../css/style-flickr.css')"></li>
+                    <li class="theme-tumblr" onclick="swapStyleSheetDark('../../css/style-tumblr.css')"></li>
+                    <li class="theme-xing" onclick="swapStyleSheetDark('../../css/style-xing.css')"></li>
+                    <li class="theme-github" onclick="swapStyleSheetDark('../../css/style-github.css')"></li>
+                    <li class="theme-html5" onclick="swapStyleSheetDark('../../css/style-html5.css')"></li>
+                    <li class="theme-openid" onclick="swapStyleSheetDark('../../css/style-openid.css')"></li>
+                    <li class="theme-stack-overflow" onclick="swapStyleSheetDark('../../css/style-stack-overflow.css')"></li>
+                    <li class="theme-css3" onclick="swapStyleSheetDark('../../css/style-css3.css')"></li>
+                    <li class="theme-dribbble" onclick="swapStyleSheetDark('../../css/style-dribbble.css')"></li>
+                    <li class="theme-instagram" onclick="swapStyleSheetDark('../../css/style-instagram.css')"></li>
+                    <li class="theme-pinterest" onclick="swapStyleSheetDark('../../css/style-pinterest.css')"></li>
+                    <li class="theme-vk" onclick="swapStyleSheetDark('../../css/style-vk.css')"></li>
+                    <li class="theme-yahoo" onclick="swapStyleSheetDark('../../css/style-yahoo.css')"></li>
+                    <li class="theme-behance" onclick="swapStyleSheetDark('../../css/style-behance.css')"></li>
+                    <li class="theme-dropbox" onclick="swapStyleSheetDark('../../css/style-dropbox.css')"></li>
+                    <li class="theme-reddit" onclick="swapStyleSheetDark('../../css/style-reddit.css')"></li>
+                    <li class="theme-spotify" onclick="swapStyleSheetDark('../../css/style-spotify.css')"></li>
+                    <li class="theme-vine" onclick="swapStyleSheetDark('../../css/style-vine.css')"></li>
+                    <li class="theme-foursquare" onclick="swapStyleSheetDark('../../css/style-foursquare.css')"></li>
+                    <li class="theme-vimeo" onclick="swapStyleSheetDark('../../css/style-vimeo.css')"></li>
+
+                </ul>
+            </div>
+
+        </aside>
+        <!-- end aside -->
+
+    </div>
+    <!-- end app-body -->
+
+
+    <footer class="app-footer">
+        <a href="#" class="text-theme">octAdmin</a> &copy; 2018 octaThemes.
+    </footer>
+
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="../../assets/libs/PACE/pace.min.js"></script>
+    <script src="../../assets/libs/chart.js/dist/Chart.min.js"></script>
+    <script src="../../assets/libs/nicescroll/jquery.nicescroll.min.js"></script>
+
+    <!-- jquery-loading -->
+    <script src="../../assets/libs/jquery-loading/dist/jquery.loading.min.js"></script>
+
+    <!-- octadmin Main Script -->
+    <script src="../../assets/js/app.js"></script>
+
+</body>
+
+</html>
