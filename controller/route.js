@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-router.use('/admin',require('./direction/admin'));/* 
-router.use('/basilio',require('./direction/user')); */
+router.use('/admin',require('./direction/admin'));
+router.use('/basilio',require('./direction/user')); 
 
 router.use((req,res)=>{
     let response;
@@ -24,4 +24,5 @@ router.use((err,req,res,next)=>{
     }
     if(!res.headerSent) res.status(500).send(response);
 });
+
 module.exports = router;

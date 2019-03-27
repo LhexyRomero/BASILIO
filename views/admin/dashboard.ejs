@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<% include ../partials/head %>
+<% include ../utils/admin-partials/head %>
 
 <body class="app sidebar-fixed aside-menu-off-canvas aside-menu-hidden header-fixed">
-    <% include ../partials/navbar %>
+    <% include ../utils/admin-partials/navbar %>
     <!-- end header -->
 
     <div class="app-body">
-        <% include ../partials/sidebar %>
+        <% include ../utils/admin-partials/sidebar %>
         <!-- end sidebar -->
         <main class="main">
             <!-- Breadcrumb -->
@@ -538,24 +538,8 @@
     <footer class="app-footer">
         <a href="#" class="text-theme">octAdmin</a> &copy; 2018 octaThemes.
     </footer>
-
-    <!-- Bootstrap and necessary plugins -->
-    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../../assets/libs/bootstrap/bootstrap.min.js"></script>
-    <script src="../../assets/libs/PACE/pace.min.js"></script>
-    <script src="../../assets/libs/chart.js/dist/Chart.min.js"></script>
-    <script src="../../assets/libs/nicescroll/jquery.nicescroll.min.js"></script>
-
-   <!-- jquery-loading -->
-   <script src="../../assets/libs/jquery-loading/dist/jquery.loading.min.js"></script>
-    <!-- dashboard-pm -example -->
-    <script src="../../assets/js/dashboard-pm-example.js"></script>
-
-    <!-- octadmin Main Script -->
-    <script src="../../assets/js/app.js"></script>
-
+    
+    <% include ../utils/admin-partials/inspectlet %>
 </body>
 
 </html>

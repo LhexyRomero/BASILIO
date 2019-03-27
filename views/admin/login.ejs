@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <% include ../utils/admin-partials/head %>
-
 <body>
     <section class="container-pages">
         <div class="card pages-card col-lg-4 col-md-6 col-sm-6">
@@ -9,7 +8,7 @@
                 <div class="h4 text-center text-theme"><strong>Login</strong></div>
                 <div class="small text-center text-dark"> Login to Account </div>
                
-                    <form action="../../contents/dashboards/dashboard-sales.html" method="get" >
+                    <form class="log-in-form" method="post">
                         <div class="form-group">
                             <div class="input-group">
                                  <span class="input-group-addon text-theme"><i class="fa fa-user"></i> 
@@ -22,11 +21,10 @@
                             <div class="input-group">
                                 <span class="input-group-addon text-theme"><i class="fa fa-asterisk"></i></span>
                                 <input type="password" id="password" name="password" class="form-control" placeholder="Password">
-
                             </div>
                         </div>
                         <div class="form-group form-actions">
-                            <button type="submit" class="btn  btn-theme login-btn ">   Login   </button>
+                            <button type="submit" class="btn btn-theme login-btn">   Login   </button>
                         </div>
                     </form>
 
@@ -35,16 +33,13 @@
                             <a href="pages-signup.html" class="text-theme">Signup</a>
                         </small>
                     </div>
-              
             </div>
             <!-- end card-body -->
         </div>
         <!-- end card -->
     </section>
     <!-- end section container -->
-
-         <!-- end mybutton -->
-<% include ../utils/admin-partials/footer %>
+<% include ../utils/admin-partials/inspectlet %>
 </body>
 
 </html>
